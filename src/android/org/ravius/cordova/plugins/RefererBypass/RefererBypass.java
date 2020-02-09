@@ -4,7 +4,7 @@ import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
 
 import org.json.JSONArray;
-import org.json.JSONExecption;
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -17,13 +17,13 @@ import java.net.URL;
 public class RefererBypass extends CordovaPlugin
 {
 	@Override
-	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONExecption
+	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException
 	{
 		if (action.equals("get"))
 		{
 			String url = args.getString(0);
 			String referer = args.getString(1);
-			this.get(url, callbackContext);
+			this.get(url, referer, callbackContext);
 			return true;
 		}
 	}
