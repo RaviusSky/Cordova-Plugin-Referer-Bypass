@@ -31,6 +31,8 @@ public class RefererBypass extends CordovaPlugin
 			catch (IOException e) {}
 			return true;
 		}
+
+		return true;
 	}
 
 	private void get(String url, String referer, CallbackContext callbackContext) throws IOException
