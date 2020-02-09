@@ -17,7 +17,7 @@ import java.net.URL;
 public class RefererBypass extends CordovaPlugin
 {
 	@Override
-	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException
+	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException, IOException
 	{
 		if (action.equals("get"))
 		{
@@ -28,7 +28,7 @@ public class RefererBypass extends CordovaPlugin
 		}
 	}
 
-	private void get(String url, String referer, CallbackContext callbackContext)
+	private void get(String url, String referer, CallbackContext callbackContext) throws IOException
 	{
 		if (url != null && url.length() > 0 && referer != null && referer.length() > 0)
 		{
