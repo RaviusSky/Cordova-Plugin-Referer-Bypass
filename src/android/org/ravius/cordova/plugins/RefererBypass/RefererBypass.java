@@ -17,13 +17,18 @@ import java.net.URL;
 public class RefererBypass extends CordovaPlugin
 {
 	@Override
-	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException, IOException
+	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException
 	{
 		if (action.equals("get"))
 		{
 			String url = args.getString(0);
 			String referer = args.getString(1);
-			this.get(url, referer, callbackContext);
+
+			try
+			{
+				this.get(url, referer, callbackContext);
+			}
+			catch (IOException e) {}
 			return true;
 		}
 	}
