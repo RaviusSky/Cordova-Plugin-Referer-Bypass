@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+		id="cordova-plugin-Referer-Bypass" version="1.0.0">
+	<name>Referer Bypass</name>
+	<description>Sets referer header to be the same as the url</description>
+	<license>Apache 2.0</license>
+	<keywords>cordova,device,GET</keywords>
+
+	<js-module src="www/RefererBypass.js" name="RefererBypass">
+		<clobbers target="cordova.plugins.RefererBypass" />
+	</js-module>
+
+	<platform name="android">
+		<source-file src="src/android/org/ravius/cordova/plugins/RefererBypass/RefererBypass.java"
+					target-dir="src/org/ravius/cordova/plugins/RefererBypass"></source-file>
+
+		<config-file target="res/xml/config.xml" parent="/*">
+			<feature name="RefererBypass">
+				<param name="android-package" value="org.ravius.cordova.plugins.RefererBypass.RefererBypass" />
+			</feature>
+		</config-file>
+	</platform>
+</plugin>

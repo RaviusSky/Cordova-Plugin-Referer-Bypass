@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-Referer-Bypass",
+  "version": "1.0.0",
+  "description": "Sets referer header to be the same as the url",
+  "cordova": {
+    "id": "cordova-plugin-Referer-Bypass",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaviusSky/Cordova-Plugin-Referer-Bypass.git"
+  },
+  "keywords": [
+    "cordova",
+    "device",
+    "GET",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "Ravius",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/RaviusSky/Cordova-Plugin-Referer-Bypass/issues"
+  },
+  "homepage": "https://github.com/RaviusSky/Cordova-Plugin-Referer-Bypass#readme"
+}
