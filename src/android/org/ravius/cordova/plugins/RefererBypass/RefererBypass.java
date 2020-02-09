@@ -61,7 +61,7 @@ public class RefererBypass extends CordovaPlugin
 		}
 		else
 		{
-			callbackContext.error("Expected 2 non-empty string arguments.")
+			callbackContext.error("Expected 2 non-empty string arguments.");
 		}
 	}
 }
