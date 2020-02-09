@@ -17,7 +17,7 @@ import java.net.URL;
 public class RefererBypass extends CordovaPlugin
 {
 	@Override
-	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throw JSONExecption
+	public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONExecption
 	{
 		if (action.equals("get"))
 		{
