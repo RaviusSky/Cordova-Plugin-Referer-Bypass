@@ -47,7 +47,6 @@ public class RefererBypass extends CordovaPlugin
 			con.setRequestProperty("User-Agent", "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0)");
 			con.setRequestProperty("Accept", "*/*");
 			con.setRequestProperty("Cache-Control", "no-cache");
-			con.setRequestProperty("Accept-Encoding", "gzip, deflate, br");
 			con.setRequestProperty("Connection", "keep-alive");
 
 			int code = con.getResponseCode();
