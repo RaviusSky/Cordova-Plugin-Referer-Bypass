@@ -7,7 +7,7 @@
 	<keywords>cordova,device,GET</keywords>
 
 	<js-module src="www/RefererBypass.js" name="RefererBypass">
-		<clobbers target="cordova.plugins.RefererBypass" />
+		<clobbers target="cordova.plugin.RefererBypass" />
 	</js-module>
 
 	<platform name="android">
