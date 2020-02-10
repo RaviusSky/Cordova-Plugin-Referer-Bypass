@@ -1,4 +1,4 @@
-package org.ravius.cordova.plugins;
+package org.ravius.cordova.plugins.RefererBypass;
 
 import org.apache.cordova.CordovaPlugin;
 import org.apache.cordova.CallbackContext;
